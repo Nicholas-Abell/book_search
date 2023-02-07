@@ -1,10 +1,6 @@
 import './Main.scss';
 import Book from "./Book";
-const Main = () => {
-
-    let bookImg;
-    let bookTitle = 'Art of War';
-    let bookDescription = 'Description';
+const Main = ({ bookTitle, bookImg, bookDescription }) => {
 
     return (
         <main>
