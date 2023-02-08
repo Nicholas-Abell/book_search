@@ -18,8 +18,9 @@ const Header = ({ search, setSearch, pullData }) => {
                 </input>
                 <button
                     onClick={pullData}
-                    className='searchBar__button'
-                >search</button>
+                    className='searchBar__button'>
+                    search
+                </button>
             </div>
         </header>
     )
