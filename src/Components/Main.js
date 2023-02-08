@@ -2,24 +2,25 @@ import './Main.scss';
 import Book from "./Book";
 
 const Main = ({ bookData }) => {
-    console.log('Book Data: ' + bookData)
     return (
         <main>
             {
                 bookData?.map((item) => {
-                    console.log('single book: ' + item)
-                    // let title = item.volumeInfo.title;
+                    let bookTitle = item.volumeInfo.title;
+                    let bookImage = item.volumeInfo.imageLinks.smallThumbnail !== undefined
+                        ? item.volumeInfo.imageLinks.smallThumbnail
+                        : '';
                     if (bookData !== undefined) {
                         return (
                             <Book
-                                bookTitle={item.volumeInfo.title}
+                                key={item.id}
+                                bookImage={bookImage}
+                                bookTitle={bookTitle}
                             />
                         )
                     }
                 })
             }
-            <Book
-                bookTitle={'Test'} />
         </main>
     )
 }

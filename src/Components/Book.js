@@ -1,11 +1,10 @@
 import './Book.scss';
 
-const Book = ({ bookTitle }) => {
+const Book = ({ bookTitle, bookImage }) => {
     return (
         <div className='book'>
-            <div className='book__fake-img'></div>
+            <img src={bookImage} alt='book' className='book__img'></img>
             <h2 className='book__title'>{bookTitle}</h2>
-            {/* <p className='book__description'>{bookDescription}</p> */}
         </div>
     )
 }

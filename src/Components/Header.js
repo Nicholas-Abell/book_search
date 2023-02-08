@@ -4,7 +4,6 @@ const Header = ({ search, setSearch, pullData }) => {
 
     const onChangeHandler = (event) => {
         setSearch(event.target.value);
-        console.log(event.target.value);
     }
 
     return (
