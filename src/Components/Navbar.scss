@@ -1,0 +1,18 @@
+.nav {
+    .list {
+        display: flex;
+        list-style-type: none;
+
+        &__item {
+            text-decoration: none;
+            border: solid black;
+            font-size: small;
+            padding: .3rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: blanchedalmond;
+            }
+        }
+    }
+}
